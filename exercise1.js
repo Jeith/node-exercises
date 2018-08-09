@@ -23,17 +23,14 @@ function add(x, y, callback) {
  })
  
  
- function product(a, b, callback) { 
-    var numbers = [a, b]; 
+ 
+ function product(numbers, callback) {
     callback(numbers);
  }
- function reduceIt(array, callback){
-    var reducedNum = array.reduce(numbers, 1);
-    callback(reducedNum);
- }
- product(2, 2, function(numbers){
-    reduceIt(numbers, function(reducedNum){
-        console.log(reducedNum);
-    });
- });
- 
+ setTimeout(function() { 
+    product([8,7,5], function(numbers){
+    console.log(numbers.reduce(function(a, b){
+        return a * b;
+    }, 1))
+    })
+}, 1000);
