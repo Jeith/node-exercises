@@ -20,7 +20,7 @@
             font-size: 18px;
             font-family: Arial, Helvetica, sans-serif;
             margin-right: 33px;
-            margin-top: 70px;
+            top: 70px;
         }
 
         a:hover{
@@ -50,7 +50,7 @@
             font-weight: 500;
         }
     </style>
-    <title>Catscape</title>
+    <title>Document</title>
 </head>
 <body>
         <% include ../partials/header.ejs %>
@@ -60,7 +60,6 @@
             <h1 style="text-transform: uppercase;"><%= cat[id].name%></h1>
             <h2><%= cat[id].summary %></h2>
         </div>
-        <div style="height: 200px;"></div>
         <% include ../partials/footer.ejs %>
 </body>
 </html>
