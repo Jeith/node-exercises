@@ -1,0 +1,40 @@
+{
+   "breeds":[
+      {
+         "name":"Persian",
+         "imagename": "persian",
+         "summary":"The Persian cat is a long-haired breed of cat characterized by its round face and short muzzle. It is also known as the Persian Longhair in the English-speaking countries.",
+         "description":"<p>The Persian is the most popular pedigreed cat in North America, if not the world. He first came into vogue during the Victorian era, but he existed long before then. Little is known about his early history, though.  The Persian comes in two types: show and traditional. The show Persian has a round head enhanced with a thick ruff, small ears, a flat nose, big round copper eyes, a broad, short body with heavy boning atop short tree-trunk legs, and a thick, flowing plume of a tail. The traditional Persian, also known as the Doll Face, does not have the extreme features of the show Persian, and his nose is a normal length, giving him a sweet expression. Both types have a long, glamorous coat that comes in many colors and patterns, and both share the same wonderful personality.</p>",
+         "photos":[
+            "persian_01.jpg",
+            "persian_02.jpg",
+            "persian_03.jpg",
+            "persian_04.jpg"
+         ]
+      },
+      {
+         "name":"Sphynx",
+         "imagename": "sphynx",
+         "summary":"The Sphynx cat is a breed of cat known for its lack of coat. It was developed through selective breeding, starting in the 1960s. The skin should have the texture of chamois, as it has fine hairs.",
+         "description":"<p>The Sphynx cat is a breed of cat known for its lack of coat (fur). It was developed through selective breeding, starting in the 1960s. The skin should have the texture of chamois, as it has fine hairs. Whiskers may be present, either whole or broken, or may be totally absent. Their skin is the color that their fur would be, and all the usual cat markings (solid, point, van, tabby, tortie, etc.) may be found on the Sphynx cat's skin. Because they have no coat, they lose more body heat than coated cats. This makes them warm to the touch as well as heat-seeking.</p>",
+         "photos":[
+            "sphynx_01.jpg",
+            "sphynx_02.jpg",
+            "sphynx_03.jpg",
+            "sphynx_04.jpg"
+         ]
+      },
+      {
+         "name":"Selkirk Rex",
+         "imagename": "selkirk",
+         "summary":"The Selkirk Rex is a breed of cat with highly curled hair.",
+         "description":"<p>The Selkirk Rex is gentle and sociable. He is affectionate and likes to cuddle, making him a good choice for families with older children, other pets or frequent guests. Assuming he was well socialized as a kitten, he can be a good traveler and can make an excellent therapy cat. The Selkirk is by no means a couch potato, but he is more restful to live with than the Cornish or Devon Rex.</p>",
+         "photos":[
+            "selkirk_01.jpg",
+            "selkirk_02.jpg",
+            "selkirk_03.jpg",
+            "selkirk_04.jpg"
+         ]
+      }
+   ]
+}
