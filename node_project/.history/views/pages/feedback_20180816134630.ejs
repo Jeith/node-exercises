@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>        
+        body{
+            margin: 0 0 0 0;
+            background-size: cover;
+            background-position: center;
+            background-color: #31342D;
+        }
+    </style>
+</head>
+<body>
+    <% include ../partials/header.ejs %>
+    <div class="homePhoto"></div>
+    <div id="foobar"><img src="images/bottom_bg.jpg" width="100%" alt="" /></div>
+    <form action="/submit" method="POST">
+        <label>Name</label>
+
+        name<input type="text" name="name"><br>
+        email<input type="text" name="email">
+        phone<input type="text" name="phone">
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
