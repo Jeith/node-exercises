@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <style>
+        body{
+          margin: 0 0 0 0;
+          background-size: cover;
+          background-position: center;
+          background-color: #31342D;
+      }
+      .container{
+          margin-top: 110px;
+          margin-left: 20%;
+          margin-right: auto;
+          vertical-align: middle;
+          
+      }
+      a{
+          color: white;
+          text-decoration: none;
+          vertical-align: middle;
+          font-size: 18px;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-right: 33px;
+      }
+      a:hover{
+          color: #A1CD3A;
+      }
+      h1, h2, p, label{
+          color: #A1CD3A;
+          font-family: sans-serif;
+      }
+      .chat{
+        margin-top: 150px;
+        color:#A1CD3A;
+        vertical-align: middle;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  </style>
+</head>
+<body>
+    <% include ../partials/header.ejs %>
+    <div class="homePhoto"></div>
+    <div id="foobar"><img src="images/bottom_bg.jpg" width="100%" alt="" /></div>
+    <div class="chat">
+    <ul id="messages"></ul>
+    <form action="">
+        <input id="m" autocomplete="off" /><button>Send</button>
+      </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+          var socket = io();
+          $('form').submit(function(){
+            socket.emit('chat message', $('#m').val());
+            $('#m').val('');
+            return false;
+          });
+          socket.on('chat message', function(msg){
+            $('#messages').append($('<li>').text(msg));
+            window.scrollTo(0, document.body.scrollHeight);
+          });
+        });
+      </script>
+      </div>
+</body>
+</html>

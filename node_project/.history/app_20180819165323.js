@@ -86,10 +86,7 @@ io.on('connection', function(socket){
 });
 
 app.get('/chat', function(req, res){
-    var randomNum = Math.floor((Math.random() * 3));
-    let dataFile = req.app.get("appData");
-    var cat = data.breeds
-    res.render('pages/chat', {
+    res.render('pages/catlist', {
         rand: randomNum,
         cat: dataFile.breeds,
         id: 3

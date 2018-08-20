@@ -79,22 +79,8 @@ app.get("/catlist", (req, res, next) => {
     });
 });
 
-io.on('connection', function(socket){
-    socket.on('chat message', function(msg){
-      io.emit('chat message', msg);
-    });
-});
 
-app.get('/chat', function(req, res){
-    var randomNum = Math.floor((Math.random() * 3));
-    let dataFile = req.app.get("appData");
-    var cat = data.breeds
-    res.render('pages/chat', {
-        rand: randomNum,
-        cat: dataFile.breeds,
-        id: 3
-    });
-})
+
 
 http.listen(8000, function () {
     console.log('Listening on port 8000');
