@@ -17,11 +17,20 @@
   "homepage": "https://github.com/Jeith/node-exercises#readme",
   "description": "",
   "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
     "ejs": "^1.0.0",
     "express": "^4.16.3",
+    "node": "^10.8.0",
     "nodemon": "^1.18.3",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "pg-promise": "^8.4.6",
     "request": "^2.88.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "sequelize": "^4.38.0",
+    "sequelize-cli": "^4.1.1"
   }
 }
